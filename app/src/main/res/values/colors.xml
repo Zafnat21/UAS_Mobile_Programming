@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="senang_bg">#9FA8DA</color>
+    <color name="biasa_bg">#FF8A65</color>
+    <color name="marah_bg">#EF5350</color>
+    <color name="gembira_bg">#FFD54F</color>
+    <color name="bahagia_bg">#81C784</color>
+    <color name="sedih_bg">#90A4AE</color>
 </resources>

@@ -5,8 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.uas.NoteApplication
-import com.example.uas.data.NoteAdapter
+import com.example.uas.adapter.NoteAdapter
 import com.example.uas.databinding.ActivityFlushPikiranBinding
 import com.example.uas.viewmodel.NoteViewModel
 import com.example.uas.viewmodel.NoteViewModelFactory
@@ -17,7 +16,7 @@ class flush_pikiran : AppCompatActivity() {
     private lateinit var adapter: NoteAdapter
 
     private val noteViewModel: NoteViewModel by viewModels {
-        NoteViewModelFactory((application as NoteApplication).repository)
+        NoteViewModelFactory((application as NoteApplication).noteRepository)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

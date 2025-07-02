@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.uas.data.NoteEntity
+import com.example.uas.entity.NoteEntity
 import com.example.uas.databinding.ActivityFlushPikiranDetailBinding
 import com.example.uas.viewmodel.NoteViewModel
 import com.example.uas.viewmodel.NoteViewModelFactory
@@ -13,7 +13,7 @@ class flush_pikiran_detail : AppCompatActivity() {
 
     private lateinit var binding: ActivityFlushPikiranDetailBinding
     private val noteViewModel: NoteViewModel by viewModels {
-        NoteViewModelFactory((application as NoteApplication).repository)
+        NoteViewModelFactory((application as NoteApplication).noteRepository)
     }
 
     private var noteId: Int? = null

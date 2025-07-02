@@ -1,6 +1,8 @@
 package com.example.uas.data
 
 import androidx.lifecycle.LiveData
+import com.example.uas.dao.NoteDao
+import com.example.uas.entity.NoteEntity
 
 class NoteRepository(private val noteDao: NoteDao) {
 

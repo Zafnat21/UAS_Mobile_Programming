@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#778BFF"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Text -->
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C.A.C.H.E"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Welcome Title -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Nama User, Welcome"
+        android:textSize="22sp"
+        android:textColor="#FFF9F9"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- to C.A.C.H.E -->
+    <TextView
+        android:id="@+id/toCacheText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to C.A.C.H.E"
+        android:textSize="18sp"
+        android:textColor="#FFEDED"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Subheading -->
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before you debug the code, take a\nmoment to debug your mind."
+        android:textSize="16sp"
+        android:textColor="#F8F8F8"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/toCacheText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tombol MULAI -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMulai"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="MULAI"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#2B2B2B"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

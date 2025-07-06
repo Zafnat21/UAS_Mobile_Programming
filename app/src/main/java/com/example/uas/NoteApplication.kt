@@ -1,7 +1,7 @@
 package com.example.uas
 
 import android.app.Application
-import com.example.uas.appdatabase.AppDatabase
+import com.example.uas.dao.AppDatabase
 import com.example.uas.data.NoteRepository
 import com.example.uas.repository.MoodRepository
 

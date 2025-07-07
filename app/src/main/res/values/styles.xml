@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Purple Button Style -->
+    <style name="PurpleButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_purple</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Green Button Style -->
+    <style name="GreenButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_green</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Red Button Style -->
+    <style name="RedButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_red</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

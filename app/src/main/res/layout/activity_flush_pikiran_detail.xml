@@ -2,19 +2,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bf"
     android:padding="24dp">
-
-    <!-- Tombol Back -->
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/ic_back"
-        android:background="@android:color/transparent"
-        android:contentDescription="Kembali"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="16dp" />
 
     <!-- Tanggal -->
     <TextView
@@ -22,20 +10,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="27 Juli 2025"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_below="@id/btnBack"
         android:layout_marginTop="16dp" />
 
-    <!-- EditText langsung di background -->
+    <!-- EditText -->
     <EditText
         android:id="@+id/editTextContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tulis catatanmu di sini..."
-        android:textColor="#FFFFFF"
-        android:textColorHint="#CCCCCC"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
         android:background="@android:color/transparent"
         android:padding="16dp"
         android:layout_below="@id/txtTanggal"
@@ -53,26 +40,21 @@
         android:orientation="vertical"
         android:layout_alignParentBottom="true">
 
-        <Button
+        <!-- Tombol Simpan Catatan dengan style PurpleButton -->
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonSave"
+            style="@style/PurpleButton"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Simpan Catatan"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:background="#29B6F6"
-            android:gravity="center" />
+            android:text="Simpan Catatan" />
 
-        <Button
+        <!-- Tombol Hapus Catatan dengan style GreenButton -->
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDelete"
+            style="@style/RedButton"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Hapus Catatan"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:background="#F44336"
             android:layout_marginTop="8dp" />
 
     </LinearLayout>

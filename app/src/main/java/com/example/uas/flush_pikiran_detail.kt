@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.uas.entity.NoteEntity
 import com.example.uas.databinding.ActivityFlushPikiranDetailBinding
+import com.example.uas.entity.NoteEntity
 import com.example.uas.viewmodel.NoteViewModel
 import com.example.uas.viewmodel.NoteViewModelFactory
+import java.text.SimpleDateFormat
+import java.util.*
 
 class flush_pikiran_detail : AppCompatActivity() {
 
@@ -23,6 +25,12 @@ class flush_pikiran_detail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFlushPikiranDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // ✅ Tampilkan nama hari dan tanggal hari ini
+        val localeID = Locale("id", "ID")
+        val dateFormat = SimpleDateFormat("EEEE, dd MMMM yyyy", localeID)
+        val currentDate = dateFormat.format(Date())
+        binding.txtTanggal.text = currentDate
 
         // Ambil note_id jika ada (edit)
         noteId = intent.getIntExtra("note_id", -1)

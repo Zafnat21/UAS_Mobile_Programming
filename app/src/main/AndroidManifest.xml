@@ -17,13 +17,13 @@
             android:name=".flush_pikiran_detail"
             android:exported="false" />
         <activity
-            android:name=".flush_pikiran"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MoodActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".flush_pikiran"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

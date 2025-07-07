@@ -10,7 +10,6 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-    <!-- Logo Text -->
     <TextView
         android:id="@+id/logoText"
         android:layout_width="wrap_content"
@@ -24,7 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"/>
 
-    <!-- Welcome Title -->
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -38,7 +36,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- to C.A.C.H.E -->
     <TextView
         android:id="@+id/toCacheText"
         android:layout_width="wrap_content"
@@ -51,7 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Subheading -->
     <TextView
         android:id="@+id/subText"
         android:layout_width="wrap_content"
@@ -65,7 +61,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Tombol MULAI -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnMulai"
         android:layout_width="340dp"

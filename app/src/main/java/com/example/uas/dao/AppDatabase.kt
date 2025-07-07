@@ -6,12 +6,14 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.uas.entity.MoodEntity
 import com.example.uas.entity.NoteEntity
+import com.example.uas.entity.UserEntity
 
-@Database(entities = [NoteEntity::class, MoodEntity::class], version = 2)
+@Database(entities = [NoteEntity::class, MoodEntity::class, UserEntity::class], version = 2)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun noteDao(): NoteDao
     abstract fun moodDao(): MoodDao
+    abstract fun userDao(): UserDao  // ✅ Tambahkan ini
 
     companion object {
         @Volatile
@@ -23,8 +25,7 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "db"
-                )
-                    .fallbackToDestructiveMigration() // Hapus data saat migrasi versi (pastikan sesuai kebutuhanmu)
+                ).fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance
                 instance

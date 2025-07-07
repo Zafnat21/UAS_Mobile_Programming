@@ -53,6 +53,7 @@ dependencies {
     // Room Database
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.material3.android)
     kapt(libs.androidx.room.compiler)
 
     // Lifecycle ViewModel & LiveData

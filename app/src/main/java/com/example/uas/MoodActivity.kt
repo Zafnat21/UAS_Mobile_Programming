@@ -59,7 +59,7 @@ class MoodActivity : AppCompatActivity() {
 
                         runOnUiThread {
                             Toast.makeText(this@MoodActivity, "Mood kamu: $moodDipilih berhasil disimpan", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this@MoodActivity, RiwayatMood::class.java)
+                            val intent = Intent(this@MoodActivity, DashboardActivity::class.java)
                             startActivity(intent)
                         }
                     }

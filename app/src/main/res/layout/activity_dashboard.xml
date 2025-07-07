@@ -66,14 +66,18 @@
                 android:layout_marginEnd="8dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
-                android:background="#6366F1">
+                android:background="@color/senang_bg"
+                android:id="@+id/moodTrackerCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    android:background="#6366F1">
+                    android:background="@color/senang_bg">
 
                     <!-- Placeholder for mood tracker icon -->
                     <ImageView
@@ -119,14 +123,18 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:id="@+id/flushPikiranCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    android:background="#FDB462">
+                    android:background="@color/biasa_bg">
 
                     <!-- Placeholder for flush pikiran icon -->
                     <ImageView
@@ -138,8 +146,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Flush Pikiran"
-                        android:textSize="16sp"
+                        android:text="Brain Dumpster"
+                        android:textSize="13sp"
                         android:textStyle="bold"
                         android:textColor="#333333"
                         android:layout_marginBottom="4dp" />
@@ -147,7 +155,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Buang pikiran yang menganggu"
+                        android:text="Rekam pikiranmu"
                         android:textSize="12sp"
                         android:textColor="#8B4513"
                         android:layout_marginBottom="16dp" />
@@ -243,7 +251,11 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:id="@+id/riwayatCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"

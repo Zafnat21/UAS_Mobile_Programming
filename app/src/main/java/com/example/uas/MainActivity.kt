@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btnMulai.setOnClickListener {
             // Intent pindah ke halaman mood
-            val intent = Intent(this, MoodActivity::class.java)
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
     }

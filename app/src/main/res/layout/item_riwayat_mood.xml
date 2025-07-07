@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerItemMood"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/bg_card_rounded"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/imgMood"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_smile" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025-07-06"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senang"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnDeleteMood"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Hapus"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

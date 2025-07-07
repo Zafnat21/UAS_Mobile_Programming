@@ -3,7 +3,7 @@ package com.example.uas.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.uas.data.NoteEntity
+import com.example.uas.entity.NoteEntity
 import com.example.uas.data.NoteRepository
 import kotlinx.coroutines.launch
 

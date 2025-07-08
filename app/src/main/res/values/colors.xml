@@ -8,4 +8,48 @@
     <color name="gembira_bg">#FFD54F</color>
     <color name="bahagia_bg">#81C784</color>
     <color name="sedih_bg">#90A4AE</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Warna kustom yang mungkin Anda gunakan di aplikasi Anda -->
+    <color name="primary_purple">#6C63FF</color>
+    <color name="light_purple">#E0E0FF</color>
+    <color name="gray_text">#7F8C8D</color>
+    <color name="light_gray_background">#F8F9FA</color>
+    <color name="dark_blue_text">#2C3E50</color>
+    <color name="unselected_gray">#95A5A6</color>
+    <color name="unselected_background_gray">#F0F0F0</color>
+    <color name="unselected_border_gray">#D0D0D0</color>
+
+    <!-- Warna untuk gradient dan background kartu meditasi -->
+    <color name="gradient_orange_start_overlay">#66FF9800</color>
+    <color name="gradient_orange_end_overlay">#88FF5722</color>
+    <color name="gradient_blue_start_overlay">#662196F3</color>
+    <color name="gradient_blue_end_overlay">#881976D2</color>
+    <color name="gradient_deep_orange_start_overlay">#66FF7043</color>
+    <color name="gradient_deep_orange_end_overlay">#88E64A19</color>
+    <color name="gradient_green_start_overlay">#6666BB6A</color>
+    <color name="gradient_green_end_overlay">#88388E3C</color>
+    <color name="gradient_light_green_start_overlay">#668BC34A</color>
+    <color name="gradient_light_green_end_overlay">#88689F38</color>
+    <color name="gradient_purple_start_overlay">#66673AB7</color>
+    <color name="gradient_purple_end_overlay">#88512DA8</color>
+
+    <color name="gradient_orange_start_solid">#FFFFB74D</color>
+    <color name="gradient_orange_end_solid">#FFFF9800</color>
+    <color name="gradient_blue_start_solid">#FF64B5F6</color>
+    <color name="gradient_blue_end_solid">#FF2196F3</color>
+    <color name="gradient_deep_orange_start_solid">#FFFF8A65</color>
+    <color name="gradient_deep_orange_end_solid">#FFFF7043</color>
+    <color name="gradient_green_start_solid">#FF81C784</color>
+    <color name="gradient_green_end_solid">#FF66BB6A</color>
+    <color name="gradient_light_green_start_solid">#FFA5D6A7</color>
+    <color name="gradient_light_green_end_solid">#FF8BC34A</color>
+    <color name="gradient_purple_start_solid">#FF9C27B0</color>
+    <color name="gradient_purple_end_solid">#FF673AB7</color>
+
 </resources>

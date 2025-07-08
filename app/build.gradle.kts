@@ -63,6 +63,10 @@ dependencies {
     // Coroutines
     implementation(libs.kotlinx.coroutines.android)
 
+    // ✅ MEDITATION DEPENDENCIES
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.cardview:cardview:1.0.0") // untuk CardView di layout meditation
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

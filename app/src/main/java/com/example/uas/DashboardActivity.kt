@@ -15,6 +15,7 @@ class DashboardActivity : AppCompatActivity() {
         val moodBtn = findViewById<CardView>(R.id.moodTrackerCard)
         val flushBtn = findViewById<CardView>(R.id.flushPikiranCard)
         val riwayatBtn = findViewById<CardView>(R.id.riwayatCard)
+        val meditationBtn = findViewById<CardView>(R.id.meditationCard) // Tambahan untuk meditasi
 
         // Ambil nama user dari intent
         val username = intent.getStringExtra("username") ?: "User"
@@ -44,6 +45,12 @@ class DashboardActivity : AppCompatActivity() {
 
         riwayatBtn.setOnClickListener {
             val intent = Intent(this, RiwayatMood::class.java)
+            startActivity(intent)
+        }
+
+        // TAMBAHAN: Click listener untuk tombol meditasi
+        meditationBtn.setOnClickListener {
+            val intent = Intent(this, MeditationActivity::class.java)
             startActivity(intent)
         }
     }

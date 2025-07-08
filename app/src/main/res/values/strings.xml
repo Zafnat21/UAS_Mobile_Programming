@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UAS</string>
+    <string name="meditation_background_image_description">Gambar latar belakang meditasi</string>
+    <string name="play_button_description">Mainkan audio meditasi</string>
 </resources>

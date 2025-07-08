@@ -134,15 +134,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Brain Dumpster"
-                        android:textSize="13sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="#333333"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rekam pikiranmu"
+                        android:text="Curahkan pikiranmu"
                         android:textSize="12sp"
                         android:textColor="#8B4513" />
                 </LinearLayout>
@@ -256,14 +257,18 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Happiness Meditation -->
+            <!-- Meditation Card - UPDATED WITH CLICK FUNCTIONALITY -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/meditationCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -287,7 +292,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Happiness"
+                            android:text="Meditasi"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="#333333"

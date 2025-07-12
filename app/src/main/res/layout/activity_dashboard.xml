@@ -174,7 +174,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ngoding itu bukan soal jago, tapi soal sabar dan tahan banting."
+                        android:id="@+id/TvQuotes"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
@@ -194,7 +194,11 @@
                     android:background="@drawable/baseline_circle_white_24"
                     android:src="@drawable/outline_arrow_forward_24"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="16dp" />
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/BtnNextQuotes"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

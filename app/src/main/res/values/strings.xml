@@ -2,4 +2,15 @@
     <string name="app_name">UAS</string>
     <string name="meditation_background_image_description">Gambar latar belakang meditasi</string>
     <string name="play_button_description">Mainkan audio meditasi</string>
+    <string-array name="motivation_quotes">
+        <item>The only way to do great work is to love what you do</item>
+        <item>The future belongs to those who believe in the beauty of their dreams</item>
+        <item>The best error message is the one that never shows up</item>
+        <item>First, solve the problem. Then, write the code</item>
+        <item>Make it work, make it right, make it fast</item>
+        <item>Stay hungry, stay foolish</item>
+        <item>If youre not failing, youre not learning</item>
+        <item>The only limit to our realization of tomorrow will be our doubts of today</item>
+        <!-- Tambah lagi quotes kalau kepikiran -->
+    </string-array>
 </resources>

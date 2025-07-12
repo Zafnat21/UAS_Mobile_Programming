@@ -2,6 +2,7 @@ package com.example.uas
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -12,10 +13,15 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        // Setup variabel tombol
         val moodBtn = findViewById<CardView>(R.id.moodTrackerCard)
         val flushBtn = findViewById<CardView>(R.id.flushPikiranCard)
         val riwayatBtn = findViewById<CardView>(R.id.riwayatCard)
-        val meditationBtn = findViewById<CardView>(R.id.meditationCard) // Tambahan untuk meditasi
+        val meditationBtn = findViewById<CardView>(R.id.meditationCard)
+        val btnNextQuotes = findViewById<ImageView>(R.id.BtnNextQuotes)
+
+        // Dapatkan array quotes
+        val quotes = resources.getStringArray(R.array.motivation_quotes)
 
         // Ambil nama user dari intent
         val username = intent.getStringExtra("username") ?: "User"
@@ -33,6 +39,14 @@ class DashboardActivity : AppCompatActivity() {
         val greetingText = findViewById<TextView>(R.id.greetingText)
         greetingText.text = "$greeting, $username"
 
+        // Tampilkan quote awal
+        val quoteTextView = findViewById<TextView>(R.id.TvQuotes)
+        if (quotes.isNotEmpty()) {
+            val initialQuote = quotes[(0 until quotes.size).random()]
+            quoteTextView.text = initialQuote
+        }
+
+        // Tambahkan click listener untuk tombol-tombol
         moodBtn.setOnClickListener {
             val intent = Intent(this, MoodActivity::class.java)
             startActivity(intent)
@@ -48,10 +62,16 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // TAMBAHAN: Click listener untuk tombol meditasi
         meditationBtn.setOnClickListener {
             val intent = Intent(this, MeditationActivity::class.java)
             startActivity(intent)
+        }
+
+        btnNextQuotes.setOnClickListener {
+            val randomIndex = (0 until quotes.size).random()
+            val randomQuote = quotes[randomIndex]
+            val quoteTextView = findViewById<TextView>(R.id.TvQuotes)
+            quoteTextView.text = randomQuote
         }
     }
 }
